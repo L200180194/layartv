@@ -48,10 +48,12 @@ class DisplayScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   'Selasa',
-                                  style: Constant.body_1(context: context),
+                                  style: Constant.body_1(context: context)
+                                      .copyWith(color: Constant.textBlack),
                                 ),
                                 Text('28 - 10',
-                                    style: Constant.body_1(context: context)),
+                                    style: Constant.body_1(context: context)
+                                        .copyWith(color: Constant.textBlack)),
                               ],
                             ),
                             Text(

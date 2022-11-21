@@ -5,6 +5,11 @@ class Constant {
   //ukuran berdasarkan desain ui/ux
   static double designHeight = 2256;
   static double designWidth = 1269;
+  //Color
+  static Color textBlack = Color(0xff212B36);
+  static Color red = Color(0xffFF0800);
+  static Color textGrey = Color(0xff637381);
+  static Color grey = Color(0xffF4F6F8);
   //konversi width
   static double getActualX({required BuildContext context, required double x}) {
     return x / designWidth * MediaQuery.of(context).size.width;

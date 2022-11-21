@@ -20,14 +20,16 @@ class Antrian extends StatelessWidget {
         Container(
           child: Row(
             children: [
-              SizedBox(
+              Container(
+                  color: Constant.grey,
                   width: Constant.getActualX(context: context, x: 205),
                   height: Constant.getActualY(context: context, Y: 150),
                   child: Text(
                     'Nomor Lab',
                     style: Constant.body_2(context: context),
                   )),
-              SizedBox(
+              Container(
+                  color: Constant.grey,
                   width: Constant.getActualX(context: context, x: 205),
                   height: Constant.getActualY(context: context, Y: 150),
                   child: Text(
@@ -57,9 +59,11 @@ class ListPasien extends StatelessWidget {
         SizedBox(
             width: Constant.getActualX(context: context, x: 205),
             height: Constant.getActualY(context: context, Y: 150),
-            child: Text(
-              '035T1S99DA',
-              style: Constant.body_2(context: context),
+            child: Container(
+              child: Text(
+                '035T1S99DA',
+                style: Constant.body_2(context: context),
+              ),
             )),
         SizedBox(
             width: Constant.getActualX(context: context, x: 205),

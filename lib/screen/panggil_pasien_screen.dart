@@ -12,7 +12,7 @@ class PanggilPasien extends StatelessWidget {
         Container(
           height: Constant.getActualY(context: context, Y: 250),
           width: Constant.getActualX(context: context, x: 1239),
-          color: Colors.red,
+          color: Constant.red,
           child: Text(
             'RUANG RONGTENT',
             textAlign: TextAlign.center,
@@ -23,11 +23,12 @@ class PanggilPasien extends StatelessWidget {
         Container(
           height: Constant.getActualY(context: context, Y: 350),
           width: Constant.getActualX(context: context, x: 1239),
-          decoration: BoxDecoration(border: Border.all(color: Colors.red)),
+          decoration: BoxDecoration(border: Border.all(color: Constant.red)),
           child: Text(
             '035T1S99DA',
             textAlign: TextAlign.center,
-            style: Constant.title(context: context),
+            style: Constant.title(context: context)
+                .copyWith(color: Constant.textBlack),
           ),
         ),
       ],
