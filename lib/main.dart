@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App Mitra Kedungdoro',
+      title: 'Layar Panggilan Tv',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           fontFamily: 'Open Sans',
