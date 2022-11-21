@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layartv/app/route.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +16,11 @@ class MyApp extends StatelessWidget {
       title: 'App Mitra Kedungdoro',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          fontFamily: 'Open Sans',
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity),
+      initialRoute: displayRoute,
+      onGenerateRoute: AppRoute.generateRoute,
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
