@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layartv/app/constant.dart';
+import 'package:layartv/screen/antrian_screen.dart';
 import 'package:layartv/screen/panggil_pasien_screen.dart';
 import 'package:layartv/screen/video_screen.dart';
 
@@ -32,28 +33,49 @@ class DisplayScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Antrian',
-                        style: Constant.body_1(context: context)
-                            .copyWith(color: Colors.red),
-                      ),
+                      Antrian(),
+                      Expanded(child: Container()),
+                      // SizedBox(
+                      //   height: Constant.getActualY(context: context, Y: 200),
+                      // ),
                       Container(
+                        // height: Constant.getActualY(context: context, Y: 280),
+                        width: Constant.getActualX(context: context, x: 410),
+
                         child: Row(
                           children: [
-                            SizedBox(
-                                width: Constant.getActualX(
-                                    context: context, x: 205),
-                                child: Text(
-                                  'Nomor Lab',
-                                  style: Constant.body_2(context: context),
-                                )),
-                            SizedBox(
-                                width: Constant.getActualX(
-                                    context: context, x: 205),
-                                child: Text(
-                                  'Nama Pasien',
-                                  style: Constant.body_2(context: context),
-                                )),
+                            Column(
+                              children: [
+                                Text(
+                                  'Selasa',
+                                  style: Constant.body_1(context: context),
+                                ),
+                                Text('28 - 10',
+                                    style: Constant.body_1(context: context)),
+                              ],
+                            ),
+                            Text(
+                              '11',
+                              style: Constant.title(context: context)
+                                  .copyWith(color: Colors.red),
+                            ),
+                            Text(
+                              ':',
+                              style: Constant.title(context: context)
+                                  .copyWith(color: Colors.red),
+                            ),
+                            Text(
+                              '02',
+                              style: Constant.title(context: context)
+                                  .copyWith(color: Colors.red),
+                            ),
+                            Expanded(child: Container()),
+                            IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.pause_circle_filled)),
+                            IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.more_vert_outlined)),
                           ],
                         ),
                       )
