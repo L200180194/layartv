@@ -17,11 +17,23 @@ class Constant {
 
   static TextStyle title({required BuildContext context}) {
     return TextStyle(
-        fontSize: getActualX(context: context, x: 45),
+        fontSize: getActualX(context: context, x: 60),
         fontWeight: FontWeight.w700);
   }
 
   static TextStyle body_1({required BuildContext context}) {
+    return TextStyle(
+        fontSize: getActualX(context: context, x: 30),
+        fontWeight: FontWeight.w600);
+  }
+
+  static TextStyle body_2({required BuildContext context}) {
+    return TextStyle(
+        fontSize: getActualX(context: context, x: 20),
+        fontWeight: FontWeight.w600);
+  }
+
+  static TextStyle body_3({required BuildContext context}) {
     return TextStyle(
         fontSize: getActualX(context: context, x: 32),
         fontWeight: FontWeight.w600);
